@@ -6,3 +6,5 @@ if [ $USERID -ne 0 ]
   echo "error: must have root access"
   exit 1
 fi
+
+dnf install mysql-y
