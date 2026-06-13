@@ -36,7 +36,7 @@ if [ $? -ne 0 ]
     dnf install mysql -y &>>$LOG_FILE_NAME
       VALIDATE $?  mysql installaton
   else
-     echo -e  "mysql already $Y installed"
+     echo -e  "mysql already $Y installed $N"
   fi
 
 
@@ -49,6 +49,6 @@ if [ $? -ne 0 ]
     dnf install git -y
       VALIDATE $?  Git installaton
   else
-     echo -e "git already $Y installed"
+     echo -e "git already $Y installed $N"
   fi
                      
